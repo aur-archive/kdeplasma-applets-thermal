@@ -1,0 +1,20 @@
+pkgbase = kdeplasma-applets-thermal
+	pkgdesc = KDE 4.x plasma applet to monitor CPU, HDD and NVIDIA cards temperature.
+	pkgver = 1.2
+	pkgrel = 2
+	url = https://github.com/trifling/thermal-plasma4
+	install = kdeplasma-applets-thermal.install
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	makedepends = cmake
+	makedepends = automoc4
+	depends = kdebase-runtime
+	depends = lm_sensors
+	optdepends = nvidia-utils: for NVIDIA cards support
+	optdepends = hddtemp: for hard drive temperature support
+	source = thermal-plasma4-1.2.tar.gz::https://github.com/trifling/thermal-plasma4/archive/v1.2.tar.gz
+	md5sums = f77f234392dc048f1dbaa47ed6c6dd3b
+
+pkgname = kdeplasma-applets-thermal
+
